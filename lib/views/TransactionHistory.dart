@@ -44,21 +44,21 @@ class TransactionHistory extends StatelessWidget {
                   // width: double.infinity,
                   //  height: 152,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 25),
+                    padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
 
                         Image.asset('images/btnbig.png'),
-                        SizedBox(width: 6,),
+                        SizedBox(width: 5,),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            CustomText(title: 'Bitcoin / USD', color: Color(0xff222222), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
+                            CustomText(title: 'Bitcoin / USD', color: Color(0xff222222), size: 13, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
                             SizedBox(height: 6,),
-                            CustomText(title: 'Sold: ${transList[index].btcunit} BTC', color: Color(0xff6C757D), size: 10, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
+                            CustomText(title: 'Sold: ${transList[index].btcunit} BTC', color: Color(0xff6C757D), size: 11, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
                             SizedBox(height: 8,),
-                            CustomText(title: 'Amount to Recieve: ₦${transList[index].btcAmountNaira} ', color: Color(0xff6C757D), size: 10, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
+                            CustomText(title: 'Amount to Recieve: ₦${transList[index].btcAmountNaira} ', color: Color(0xff6C757D), size: 11, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
                           ],
                         ),
                         Spacer(),
@@ -66,13 +66,12 @@ class TransactionHistory extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            CustomText(title: '${transList[index].btcDate} ', color: Color(0xff6C757D), size: 10, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
+                            CustomText(title: '${transList[index].btcDate} ', color: Color(0xff6C757D), size: 11, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
                             SizedBox(height: 5,),
-                            CustomText(title: '${transList[index].btcStatus} ', color: transList[index].btcStatus=='Confirmation Successful'?  Color(0xff21BF73): Color(0xffD90429), size: 10, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
+                            CustomText(title: '${transList[index].btcStatus} ', color: transList[index].btcStatus=='Confirmation Successful'?  Color(0xff21BF73): Color(0xffD90429), size: 11, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
 
                           ],
                         ),
-
 
                       ],
                     ),

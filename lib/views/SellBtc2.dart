@@ -83,7 +83,7 @@ class _SellBtc2State extends State<SellBtc2> {
                   SizedBox(height: 30,),
                   Center(child: Image.asset('images/btnpic.png')),
                   SizedBox(height: 13,),
-                  Center(child: CustomText(title: 'Our Bitcoin Address', color: Color(0xff343A40), size: 15, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', )),
+                  Center(child: CustomText(title: 'Our Bitcoin Address', color: Color(0xff343A40), size: 17, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', )),
                   SizedBox(height: 18,),
                   Center(child: Container(
                     padding: EdgeInsets.all(10),
@@ -95,7 +95,7 @@ class _SellBtc2State extends State<SellBtc2> {
                       ),
                       borderRadius: BorderRadius.all(Radius.circular(4))
                     ),
-                      child: CustomText(title: btcAddress, color: Color(0xff212529), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ))),
+                      child: CustomText(title: btcAddress, color: Color(0xff212529), size: 12.5, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ))),
                   SizedBox(height:25),
                   //on tap to copy link
                   GestureDetector(
@@ -123,7 +123,7 @@ class _SellBtc2State extends State<SellBtc2> {
                             child: CustomText(title: 'Copy Address', color: Color(0xff7A1300), size: 14, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', )))),
                   ),
                   SizedBox(height: 59,),
-                  CustomText(title: 'Upload screenshot of sent BTC*', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
+                  CustomText(title: 'Upload screenshot of sent BTC*', color: Color(0xff6C757D), size: 14, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
                   SizedBox(height: 18,),
                   GestureDetector(
                     onTap: (){
@@ -146,7 +146,7 @@ class _SellBtc2State extends State<SellBtc2> {
                               Icon(Icons.drive_folder_upload,
                               color: Color(0xff6C757D),),
                               SizedBox(width: 10,),
-                              CustomText(title: 'Upload file here', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
+                              CustomText(title: 'Upload file here', color: Color(0xff6C757D), size: 13, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
                             ],
                           ): Row(
                             children: [
@@ -155,7 +155,7 @@ class _SellBtc2State extends State<SellBtc2> {
                                 size: 13.28,
                                 color: Color(0xff6C757D),),
                               SizedBox(width: 5,),
-                              CustomText(title: '$myrenamedImage', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
+                              CustomText(title: '$myrenamedImage', color: Color(0xff6C757D), size: 13, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
                               Spacer(),
                               GestureDetector(
                                 onTap: (){
@@ -180,9 +180,9 @@ class _SellBtc2State extends State<SellBtc2> {
                     ],
                   ),
                   SizedBox(height: 20),
-                  CustomText(title: '* Copy our BTC wallet address above to send BTC', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
+                  CustomText(title: '* Copy our BTC wallet address above to send BTC', color: Color(0xff6C757D), size: 14, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
                   SizedBox(height: 16),
-                  CustomText(title: '* Kindly allow confirmation of your Bitcoin for your\n   wallet to be credited ', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
+                  CustomText(title: '* Kindly allow confirmation of your Bitcoin for your\n   wallet to be credited ', color: Color(0xff6C757D), size: 14, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular', ),
                   SizedBox(height: 70),
                   BoldButton(text: 'DONE', pressMe: (){
                     if(_image==null){

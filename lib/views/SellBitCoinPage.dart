@@ -45,19 +45,22 @@ class _SellBitCoinPageState extends State<SellBitCoinPage> {
             ) ,
           ),
           body: Container(
-            margin: EdgeInsets.symmetric(horizontal: 10),
+            margin: EdgeInsets.symmetric(horizontal: 16),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 8,),
-                  CustomText(title: 'BTC Real Time Rate', color: Color(0xff6C757D), size: 10, fontWeight: FontWeight.w400),
+                  SizedBox(height: 14,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 14),
+                    child: CustomText(title: 'BTC Real Time Rate', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400),
+                  ),
                   SizedBox(height: height*0.015,),
                   Card(
                     color: Colors.white,
                     elevation: 1,
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 15),
+                      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
                       child: Row(
                         children: [
 
@@ -66,16 +69,16 @@ class _SellBitCoinPageState extends State<SellBitCoinPage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              CustomText(title: 'Bitcoin / USD', color: Color(0xff222222), size: 12, fontWeight: FontWeight.w400, fontFamily: 'Poppins',),
+                              CustomText(title: 'Bitcoin / USD', color: Color(0xff222222), size: 14, fontWeight: FontWeight.w400, fontFamily: 'Poppins',),
                               SizedBox(height: 4,),
-                              CustomText(title: '\$33,362.00', color: Color(0xff222222), size: 12, fontWeight: FontWeight.w700, fontFamily: 'RobotoRegular',),
+                              CustomText(title: '\$33,362.00', color: Color(0xff222222), size: 14, fontWeight: FontWeight.w700, fontFamily: 'RobotoRegular',),
 
                             ],
                           ),
                           Spacer(),
                           Padding(
                             padding: const EdgeInsets.only(right: 8),
-                            child: CustomText(title: 'Rate: 501 NGN /\$ ', color: Color(0xff21BF73), size: 10, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
+                            child: CustomText(title: 'Rate: 501 NGN /\$ ', color: Color(0xff21BF73), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',),
                           ),
 
 
@@ -84,7 +87,7 @@ class _SellBitCoinPageState extends State<SellBitCoinPage> {
                     ),
                   ),
                   SizedBox(height: height*0.04,),
-                  Center(child: CustomText(title: 'Enter BTC Amount To Sell ', color: Color(0xff6C757D), size: 10, fontWeight: FontWeight.w400, fontFamily: 'Poppins',)),
+                  Center(child: CustomText(title: 'Enter BTC Amount To Sell ', color: Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'Poppins',)),
                   SizedBox(height: height*0.03,),
                   Center(
                     child: Row(
@@ -132,11 +135,11 @@ class _SellBitCoinPageState extends State<SellBitCoinPage> {
                     ),
                   ),
                   SizedBox(height: height*0.028,),
-                  Center(child: CustomText(title: 'Sell Amount In USD: ${amountUSD.toStringAsFixed(2)}', color:greenColor, size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',)),
+                  Center(child: CustomText(title: 'Sell Amount In USD: ${amountUSD.toStringAsFixed(2)}', color:greenColor, size: 14, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',)),
                   SizedBox(height: height*0.01,),
-                  Center(child: CustomText(title: 'Min Amount To Sell \$50', color:Color(0xff6C757D), size: 10, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',)),
+                  Center(child: CustomText(title: 'Min Amount To Sell \$50', color:Color(0xff6C757D), size: 12, fontWeight: FontWeight.w400, fontFamily: 'RobotoRegular',)),
                   SizedBox(height: height*0.04,),
-                  Center(child: CustomText(title: 'Amount to Receive:  ${amountNGN.toStringAsFixed(2)} NGN', color:Color(0xff222222), size: 12, fontWeight: FontWeight.w700, fontFamily: 'RobotoRegular',)),
+                  Center(child: CustomText(title: 'Amount to Receive:  ${amountNGN.toStringAsFixed(2)} NGN', color:Color(0xff222222), size: 14, fontWeight: FontWeight.w700, fontFamily: 'RobotoRegular',)),
 
                   SizedBox(height: 83,),
                   BoldButton(text: 'Proceed to sell', pressMe: (){

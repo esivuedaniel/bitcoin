@@ -28,7 +28,7 @@ class BitCoinClass extends StatelessWidget {
                 ),
                 Text('Sell bitcoin',
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 15,
                   color: textColor,
                   fontFamily: 'RobotoRegular'
 
